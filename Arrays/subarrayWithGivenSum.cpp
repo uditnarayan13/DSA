@@ -20,7 +20,7 @@ while(start<n && start<=end){
         tempSum-=arr[start];
         start++;
     }
-}5
+}
 return pos;
 }
 int main(){
@@ -35,6 +35,7 @@ int main(){
         cin>>arr[i];
     }
     vector<int>result=subArraySum(arr,n,sum);
+
     for(int i=0;i<result.size();i++){
         cout<<result[i]<<" ";
     }

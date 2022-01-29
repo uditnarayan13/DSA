@@ -75,7 +75,7 @@ int main()
     {
         cin >> arr2[i];
     }
-    // mergeArray(arr1, arr2, n, m);
+    mergeArray(arr1, arr2, n, m);
     mergeGapmethod(arr1,arr2,n,m);
     cout<<"Array 1 : ";
     for (int i = 0; i < n; i++)

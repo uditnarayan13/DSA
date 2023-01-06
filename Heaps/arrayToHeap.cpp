@@ -26,7 +26,7 @@ void arrayToHeap(vector<int>&v,bool minHeap=true){
 }
 
 int main(){
-    vector<int> v = {4,3,6,10};
+    vector<int> v = {10, 5, 6, 2,12, 7, 9};
     arrayToHeap(v,false);
     for(int i=0;i<v.size();i++){
         cout<<v[i]<<" ";

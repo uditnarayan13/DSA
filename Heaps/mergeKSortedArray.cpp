@@ -45,7 +45,4 @@ vector<int>mergeSortedArray(vector<vector<int>> arr){
 int main(){
     vector<vector<int>>arr= {{2,3,5},{1,4,9},{6,7,8}};
     vector<int> res = mergeSortedArray(arr);
-   /*  for(int i=0;i<res.size();i++){
-        cout<<res[i]<<" ";
-    } */
 }

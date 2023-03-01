@@ -33,9 +33,9 @@ void deleteAtHead(Node *&head){
 
 void deleteAtMiddle(Node* head , int pos){
     Node* prev=head;
-    Node* curr=head->next;
-    while(pos-2>=0 && prev!=NULL && curr!=NULL){
-        prev=prev->next;
+    Node* curr=head;
+    while(pos-1>=0 && prev!=NULL && curr!=NULL){
+        prev=curr;
         curr=curr->next;
       
         pos--;
@@ -75,11 +75,11 @@ int main(){
     print(head);
     deleteAtTail(head);
     print(head);
-    /* deleteAtMiddle(head,2);
+    deleteAtMiddle(head,2);
     print(head);
 
     print(head);
     deleteAtHead(head);
-    print(head); */
+    print(head);
 
 }

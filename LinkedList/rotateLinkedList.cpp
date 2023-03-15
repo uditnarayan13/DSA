@@ -31,7 +31,6 @@ void rotateList(Node *&head)
         prev = curr;
         curr = curr->next;
     }
-    // cout<<"prev->next data "<<prev->next->data;
     prev->next->next = head;
     head = prev->next;
     prev->next = NULL;
@@ -53,21 +52,23 @@ void leftRotateList(Node *&head)
 
 Node *newleftRotateList(Node *head, int k)
 {
-    Node *newHead = NULL;
-    while (k--)
-    {   
-        Node *curr = head;
-        newHead = head->next;
-        Node *last = head;
-        while (last->next != NULL)
-        {
-            last = last->next;
-        }
-        last->next = curr;
-        head->next = NULL;
-        head=newHead;
+    Node *last = head;
+    while (last->next != NULL)
+    {
+        last = last->next;
     }
-    return newHead;
+    while (k--)
+    {
+        Node *curr = head;
+        Node *newHead = head->next;
+
+        last->next = head;
+        last = head;
+        head->next = NULL;
+        head = newHead;
+    }
+
+    return head;
 }
 
 void print(Node *head)

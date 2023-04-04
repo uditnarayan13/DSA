@@ -7,7 +7,7 @@ void binarySearch(int arr[], int element,int size){
     int end=size-1;
     while(start<=end){
         int middle = (start+(end-start)/2);
-
+         cout<<"Start : "<<start<<" Middle : "<<middle<<" end: "<<end<<"\n";
         if(arr[middle]==element){
             cout<<"Element is "<<arr[middle]<<" found at index: "<<middle<<"\n";
             return;

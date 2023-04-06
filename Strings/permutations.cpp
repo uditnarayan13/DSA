@@ -9,8 +9,8 @@ void permutations(string s , int l ,int r){
     }else{
         for(int i=l;i<=r;i++){
             swap(s[l],s[i]);
-            permutations(a, l + 1, r);
-            swap(a[l],a[i]);
+            permutations(s, l + 1, r);
+            swap(s[l],s[i]);
 
         }
     }
